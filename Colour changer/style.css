@@ -1,0 +1,70 @@
+/* Basic Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: background-color 0.4s ease; /* Isse background color smoothly change hoga */
+}
+
+/* Top Main Heading */
+.main-heading {
+    font-size: 26px;
+    color: #222222;
+    font-weight: bold;
+}
+
+/* Card Container */
+.color-picker-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.color-picker-card h2 {
+    font-size: 16px;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Buttons */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1xl); /* 3 buttons ek row mein */
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Premium Round Buttons Style */
+.color-grid button {
+    border: none;
+    color: white;
+    padding: 15px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 8px; /* Clean rounded borders */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: capitalize;
+}
+
+/* Hover Effect: Button thoda bara hoga */
+.color-grid button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}

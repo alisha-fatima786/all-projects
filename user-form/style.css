@@ -1,0 +1,180 @@
+/* Base Styling & Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.main-heading {
+    font-family: Arial, sans-serif;
+    color: #222222;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Form Container Styling */
+form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Text & Email Inputs */
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+}
+
+/* Inline Styles for Radio and Checkbox */
+form label:has(input[type="radio"]),
+form label:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    cursor: pointer;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    cursor: pointer;
+    accent-color: #4a90e2; /* Modern browser check color */
+}
+
+/* Submit & Update Button */
+form input[type="submit"] {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: background 0.2s ease;
+    margin-top: 10px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #357abd;
+}
+
+/* Table Styling */
+.data-table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden; /* To keep corners rounded */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: none;
+}
+
+.data-table th, 
+.data-table td {
+    padding: 14px 18px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.data-table th {
+    background-color: #343a40;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.data-table tr {
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s ease;
+}
+
+.data-table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.data-table tbody tr:last-child {
+    border-bottom: 2px solid #343a40;
+}
+
+/* Action Table Data & Buttons Styling */
+.data-table td:last-child {
+    display: flex;
+    gap: 8px;
+}
+
+.data-table button {
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Edit Button */
+.data-table button:nth-child(1) {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.data-table button:nth-child(1):hover {
+    background-color: #e0a800;
+}
+
+/* Delete Button */
+.data-table button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+}
+
+.data-table button:nth-child(2):hover {
+    background-color: #bd2130;
+}

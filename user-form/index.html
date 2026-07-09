@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="main-heading">User Registration Portal</h1>
+    <form action="" onsubmit="formSubmit(event)">
+        <label for="">
+            Name:
+            <input type="text" name="" id="user_name">
+        </label><br>
+
+         <label for="">
+            Email:
+            <input type="email" name="" id="user_email">
+        </label><br>
+        <label for="">
+            Gender:
+            <input type="radio" name="gender" id="" value="Male">Male
+                <input type="radio" name="gender" id="" value="Female">Female
+        </label><br>
+
+        <label for="">
+            Skills:
+            <input type="checkbox" name="skills" id="" value="html">HTML
+             <input type="checkbox" name="skills" id="" value="css">CSS
+              <input type="checkbox" name="skills" id="" value="javascript">JAVASCRIPT
+        </label><br>
+        <input type="submit" value="submit">
+    </form>
+
+    <div class="table-container">
+
+        <table class="data-table">
+            <thead>
+                <tr>
+                    <th>NAME</th>
+                    <th>EMAIL</th>
+                    <th>GENDER</th>
+                    <th>SKILLS</th>
+                    <th>ACTION</th>
+                </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
